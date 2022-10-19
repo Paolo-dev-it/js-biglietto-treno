@@ -28,15 +28,15 @@ function totalPriceTravel(){
 
     let under = price * 0.2;
 
+    const childPrice = price - under;
+
     // Calcolo costo sconto anziano al chilometro
 
     let over = price * 0.4;
 
-    // Variabili costanti prezzo al chilometro compreso di sconto minorenne e anziano
-
-    const childPrice = price - under;
-
     const seniorPrice = price - over;
+
+
 
     if (valueAge < 18) {
         price = childPrice.toFixed(2)
